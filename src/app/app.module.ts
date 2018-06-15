@@ -20,6 +20,8 @@ import {CalendarModule} from 'primeng/calendar';
 import {InputTextModule} from 'primeng/inputtext';
 import {CheckboxModule} from 'primeng/checkbox';
 import { FooterComponent } from './footer/footer.component';
+import {PanelMenuModule} from 'primeng/panelmenu';
+
 
 
 
@@ -46,7 +48,8 @@ import { FooterComponent } from './footer/footer.component';
     DropdownModule,
     CalendarModule,
     InputTextModule,
-    CheckboxModule
+    CheckboxModule,
+    PanelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

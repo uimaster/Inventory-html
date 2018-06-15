@@ -80,7 +80,45 @@ a, input {
   padding: 2px 0;
   border-bottom: 1px solid #5ab1ab;
 }
+.sidebarnav{
+  width: 100%;
+  display: table;
+  background-color: $black;
+  .ui-state-default{
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    a{
+      color: $white;
+    }
+  }
+  .ui-panelmenu{
+    .ui-panelmenu-header:not(.ui-state-active){
+      &:hover{
+        background-color: #186ba0;
+        a{
+          color: $white;
+        }
+      }
+    }
+    .ui-panelmenu-header.ui-state-active,.ui-panelmenu-header.ui-state-active a{
+      border-color: $white;
+    }
+    .ui-panelmenu-content .ui-menuitem-link{
+      color: $white;
+      &:hover{
+        background-color: #186ba0;
+      }
+    }
+  }
+  .ui-state-active{
+    border-color: $white;
+  }
+  .ui-corner-top,.ui-corner-bottom{
+    border-radius: 0;
+  }
 
+}
 .loginlogo {
   width: 100%;
   float: left;
@@ -390,8 +428,8 @@ a, input {
       color: #fff;
     }
     .ui-button{
-      background: #b1b1b1;
-      border-color: #b1b1b1;
+      background: #186ba0;
+      border-color: #186ba0;
     }
   }
   .docdropdown {
@@ -405,21 +443,24 @@ a, input {
 .orderoption{
   width: 300px;
   max-width: 100%;
-  float: right;
+  float: left;
   padding: 15px 20px;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #d8d6d6;
   border-radius: 3px;
   position: relative;
+  background-color: #d5e7f3;
   h4{
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
     color: $black;
     position: absolute;
-    top: -12px;
+    top: -21px;
     left: 20px;
-    background-color: #ececec;
-    padding: 0 5px;
+    background-color: #d5e7f3;
+    padding: 3px 10px 0;
+    border-radius: 3px;
+    box-shadow: 0px -1px 1px #d8d6d6;
   }
   .optionvalue{
     width: 50%;
@@ -445,7 +486,7 @@ a, input {
     line-height: 30px;
     font-weight: 400;
     color: $white;
-    background-color: #979797;
+    background-color: #186ba0;
     &::-webkit-input-placeholder{color: $white;}
     &:-ms-input-placeholder{color: $white;}
     &::-moz-placeholder{color: $white;}
