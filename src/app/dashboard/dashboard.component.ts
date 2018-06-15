@@ -94,7 +94,7 @@ export class DashboardComponent implements OnInit {
     }
   ];
   public lineChartLegend:boolean = true;
- 
+  
   constructor() { }
   
 

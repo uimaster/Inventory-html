@@ -9,17 +9,24 @@ import { RestPasswordComponent } from './reset-password/rest-password.component'
 import { routing } from './app.route';
 import { ChartsModule } from 'ng2-charts';
 
+import {SidebarModule} from 'primeng/sidebar';
+import { NavbarComponent } from './navbar/navbar.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    RestPasswordComponent
+    RestPasswordComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     routing,
-    ChartsModule
+    ChartsModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
