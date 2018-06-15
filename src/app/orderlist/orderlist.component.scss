@@ -1,0 +1,23 @@
+@import "./src/assets/scss/variable";
+@import "./src/assets/scss/mixing";
+
+
+.Orderplan{
+    label{
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        padding: 10px 5px;
+        color: #6f6e6e;
+        width: 70px;
+    }
+}
+.orderHD{
+    padding: 30px 0;
+}
+.orderoptionrt{
+    padding-top: 50px;
+}
+.ui-datatable-reflow .ui-datatable-data > tr > td {
+    width: 100% !important;
+}
