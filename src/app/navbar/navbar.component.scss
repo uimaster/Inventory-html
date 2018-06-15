@@ -103,65 +103,7 @@
         }
     }
     
-  .sidebarnav{
-    width: 100%;
-    display: table;
-    background-color: $black;
-    ul{
-      list-style: none;
-      li{
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 400;
-        color: $white;
-        border-bottom: 1px solid #989696;
-        position: relative;
-        &:last-child{
-          border-bottom: 0;
-        }
-        a{
-          color: $white;
-          display: block;
-          padding: 10px;
-          &:hover{
-            background-color: #989696;
-            color: $white;
-            text-decoration: none;
-          }
-        }
-        &:hover ul{
-          display: block;
-        }
-       
-      }
-      ul{
-        display: none;
-        position: absolute;
-        min-width: 200px;
-        left: 100%;
-        background-color: #000;
-        top: 0px;
-        box-shadow: 0px 1px 2px #fff;
-        &:before{
-          content:'\f0da';
-          font-family: "FontAwesome";
-          position: absolute;
-          position: absolute;
-          top: 10px;
-          left: -20px;
-        }
-        li{
-          &:hover ul{
-            display: block;
-          }
-          ul{
-            display: none;
-          }
-        }
-        
-      }
-    }
-  }
+  
   .ui-button-icon-left,.ui-button .ui-button-text{
     display: none;
   }
