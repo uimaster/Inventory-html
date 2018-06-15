@@ -44,7 +44,10 @@ a, input {
 .clear {
   clear: both;
 }
-
+.no-pd{
+  padding-left: 0;
+  padding-right: 0;
+}
 .row {
   margin-left: 0;
   margin-right: 0;
@@ -346,4 +349,137 @@ a, input {
   background-color: #f00;
   color: #fff;
   padding: 0;
+}
+.Orderplan{
+  .plandropdown .ui-dropdown {
+    width: 200px !important;
+    height: 36px;
+    .ui-dropdown-label{
+      padding: 5px; 
+      font-size: 16px;
+      font-weight: 400;
+      color: $black;
+    }
+    .ui-dropdown-trigger{
+      width: 25px;
+      height: 34px;
+    }
+    .ui-widget-content{
+      background-color: $white;
+    }
+  }
+  .datedropdown{
+    width: 200px;
+    height: 34px;
+    .ui-inputtext{
+      width: 172px;
+      height: 34px;
+      font-size: 16;
+      font-weight: 400;
+      color: $black;
+    }
+    .ui-state-disabled, .ui-widget:disabled{
+      opacity: 1;
+      a{
+        background-color: #cccaca;
+        color: #fff;
+      }
+    }
+    a.ui-state-highlight{
+      background-color: #cccaca;
+      color: #fff;
+    }
+    .ui-button{
+      background: #b1b1b1;
+      border-color: #b1b1b1;
+    }
+  }
+  .docdropdown {
+    width: 202px;
+    height: 34px;
+    font-size: 16;
+    font-weight: 400;
+    color: $black;
+  }
+}
+.orderoption{
+  width: 300px;
+  max-width: 100%;
+  float: right;
+  padding: 15px 20px;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  position: relative;
+  h4{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $black;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background-color: #ececec;
+    padding: 0 5px;
+  }
+  .optionvalue{
+    width: 50%;
+    float: left;
+    .ui-chkbox-label{
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+      color: $black;
+      margin: 0;
+    }
+  }
+}
+.orderPO{
+  width: 200px;
+  max-width: 100%;
+  float: right;
+  height: 90px;
+  display: table;
+  padding-left: 15px;
+  .form-control{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $white;
+    background-color: #979797;
+    &::-webkit-input-placeholder{color: $white;}
+    &:-ms-input-placeholder{color: $white;}
+    &::-moz-placeholder{color: $white;}
+    &:-moz-placeholder{color: $white;}
+  }
+  span{
+    height: 100%;
+    vertical-align: bottom;
+    display: table-cell;
+  }
+}
+.orderlist{
+  .ui-datatable .ui-datatable-thead>tr>th, .ui-datatable .ui-datatable-tfoot>tr>td, .ui-datatable .ui-datatable-data>tr>td{
+    padding: 10px 5px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $black;
+    text-align: center;
+    white-space: normal;
+  }
+  .ui-datatable .ui-datatable-thead>tr>th{
+    font-weight: 600;
+  }
+}
+.orderlist{
+  padding-bottom: 30px;
+  .ui-widget-content{
+    background-color: #fff;
+  }
+  .ui-widget-content.ui-datatable-odd{
+    background-color: #f3f3f3 !important; 
+  }
+  .ui-datatable th.ui-state-default{
+    background-color: #f3f3f3;
+  }
 }
