@@ -11,6 +11,7 @@ import { ChartsModule } from 'ng2-charts';
 
 import {SidebarModule} from 'primeng/sidebar';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PurchaseComponent } from './purchase/purchase.component';
 
 
 
@@ -20,7 +21,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     LoginComponent,
     DashboardComponent,
     RestPasswordComponent,
-    NavbarComponent
+    NavbarComponent,
+    PurchaseComponent
   ],
   imports: [
     BrowserModule,
